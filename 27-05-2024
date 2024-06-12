@@ -1,0 +1,151 @@
+'''
+a=list(map(int,input().split()))
+b=list(map(int,input().split()))
+i=0
+j=0
+c=[]
+while i<len(a) and j<len(b):
+    if(a[i]<b[j]):
+        c.append(a[i])
+        i=i+1
+    else:
+        c.append(b[j])
+        j=j+1
+if(j<len(b)):
+    c.extend(b[j:])
+if(i<len(a)):
+    c.extend(b[i:])
+print(c)
+    '''
+'''
+str1="aaabbaaaadddb"
+count=1
+s1=''
+i=0
+for i in range(len(str1)-1):
+    if (str1[i]==str1[i+1]):
+        count=count+1
+    else:
+        s1=s1+str1[i]+str(count)
+        count=1
+s1=s1+str1[-1]+str(count)
+print(s1)
+'''     
+''' 
+a=list(map(int,input().split()))
+b=[]
+for i in a:
+    if (i not in a):
+        b.append(i)
+for i in b:
+    print(i,"- ",a.count(i))
+  '''
+
+'''
+s="AScafrtyGhIeo@6878*(^647BV12"
+uv,uc,lv,lc,d,s=0,0,0,0,0,0
+for i in s:
+    if(i.isupper()):
+        if(i in 'AEIOU'):
+            uv=uv+1
+        else:
+            ul=ul+1
+    elif(i.islower()):
+        if (i in 'aeiou'):
+            lv+=1
+        else:
+            lc+=1
+    elif(i.isdigit()):
+        d+=1
+    elif(not i.isalnum()):
+        s=s+1
+print(uv,uc,lv,lc,d,s)
+    
+'''
+'''
+s="placements"
+s1=''
+for i in s:
+    if (i in 'aeiou'):
+        s1=s1+i.upper()
+    else:
+        s1=s1+i.lower()
+print(s1)
+'''
+'''
+s1=input()
+s1=s1.split()
+e=0
+o=0
+d=0
+for i in s1:
+    if i.isdigit():
+        if int(i)%2==0:
+            e=e+int(i)
+        else:
+            o=o+int(i)
+            
+    else:
+        d=d+float(i)
+print(e,o,d)
+'''
+
+'''n = int(input())
+m = int(input())
+count = 0
+for i in range(n,m+1):
+    if i%7 == 0:
+        count += 1
+print(count)'''
+
+'''n = int(input())
+m = int(input())
+print(abs((n//7)-(m//7)))'''
+'''n = int(input())
+c = 0
+while(1):
+    for i in range(2, (n//2)+1):
+        if(n % i) ==0:
+            c += 1
+            break
+        if(c==0):
+            print(n)
+            break
+        else:
+            n += 1'''
+
+'''n = int(input())
+c=0
+while(n):
+    if(n%10 in [2,3,5,7]):
+        c = c+1
+    n = n//10
+print(c)'''
+
+s = input()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
